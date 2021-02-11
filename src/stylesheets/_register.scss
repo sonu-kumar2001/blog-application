@@ -1,0 +1,69 @@
+.register {
+    h1 {
+        font-size: 2.7rem;
+        font-weight: 600;
+        margin: 2.1rem 0;
+    }
+    form {
+        width: 500px;
+        padding: 3rem 5rem;
+        .field {
+            margin: 2.3rem 0;
+            i {
+                color: rgb(104, 94, 94);
+            }
+            ::placeholder {
+                color: rgb(104, 94, 94);
+                font-weight: 500;
+            }
+        }
+    }
+    .control {
+        input {
+            box-shadow: 1px 1px 1px 1px rgb(179, 174, 174);
+        }
+        button {
+            background-color: #47989B;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: .75rem 2rem;
+            &:hover {
+                background-color: #47989B
+            }
+        }
+    }
+}
+.register-container {
+    box-shadow: 2px 2px 4px 4px rgb(179, 174, 174);
+    border-radius: 8px;
+}
+.register {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.form-image {
+    width: 300px;
+    border-radius: 8px 0 0 8px;
+    img {
+        border-radius: 8px 0 0 8px;
+    }
+}
+.login-link {
+    font-size: 1.2rem;
+}
+.login {
+    form {
+        margin: 2rem 0;
+        .field {
+            margin: 2.3rem 0;
+        }
+    }
+}
+
+.text-red {
+    color: crimson;
+}
+.error {
+    border: 1px solid crimson;
+}

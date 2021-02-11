@@ -1,0 +1,26 @@
+header {
+    width: 100px;
+    height: 660px;
+    background-color: #47989B;
+    position: fixed;
+    bottom: 0;
+    border-top-right-radius: 60px;
+    nav {
+        padding: 2rem;
+        ul {
+            margin-top: 1rem;
+        }
+        li {
+            font-size: 1.9rem;
+            margin: 1.2rem 0;
+            i {
+                color: whitesmoke;
+            }
+        }
+    }
+}
+.active i{
+    background-color: white;
+    color: #47989B;
+    padding: 1rem 3.4rem 1rem 3.4rem;
+}
