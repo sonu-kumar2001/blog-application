@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
+import Header from "./Header"
 
 export default class Register extends Component {
     constructor(props) {
@@ -32,7 +33,7 @@ export default class Register extends Component {
 
         switch (name) {
             case "username":
-                error.username = value.length < 4 ? "username must be at least 3 character" : ""
+                error.username = value.length < 6 ? "username must be at least 6 character" : ""
                 break;
             case "email" :
                 error.email = this.validateEmail(value) ? "" : "Email is not valid"
@@ -54,7 +55,9 @@ export default class Register extends Component {
     render() {
         const{username,email,password,confirmPassword} = this.state.errors;
         return (
-            <section className="register">
+            <section className="flex">
+                <Header/>
+            <div className="register">
                 <h1 className="text-center">Register</h1>
                 <div className="register-container flex">
                         <div className="form-image">
@@ -119,6 +122,7 @@ export default class Register extends Component {
                         </Link>
                     </form>
                 </div>
+            </div>
             </section>
         )
     }

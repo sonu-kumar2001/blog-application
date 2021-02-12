@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import { NavLink } from "react-router-dom";
+import Header from './Header';
 
 export default class Register extends Component {
     
     render() {
         return (
-            <section className="login register">
+            <section className="flex">
+                <Header/>
+            <div className="login register">
                 <h1 className="text-center">Login</h1>
                 <div className="register-container flex">
                         <div className="form-image">
@@ -44,6 +47,7 @@ export default class Register extends Component {
                         </NavLink>
                     </form>
                 </div>
+            </div>
             </section>
         )
     }

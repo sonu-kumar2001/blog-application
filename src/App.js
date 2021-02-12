@@ -10,7 +10,7 @@ export default class App extends Component {
   render() {
     return (
       <BrowserRouter>
-      <Route path="/">
+      <Route path="/" exact>
         <Home/>
       </Route>
       <Route path="/register" exact>
@@ -19,6 +19,7 @@ export default class App extends Component {
       <Route path="/register/login">
         <Login/>
       </Route>
+      <Route/>
     </BrowserRouter>
     )
   }

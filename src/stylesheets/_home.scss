@@ -1,1 +1,78 @@
-
+.home-container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.logo h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: $primary-color;
+    margin: 1rem 2.5rem;
+}
+.article-list {
+    flex-wrap: wrap;
+    align-items: center;
+}
+.article-card {
+    box-shadow: 2px 2px 4px 4px rgb(194, 188, 188);
+    margin: 2rem  1rem;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    width: 30%;
+    h2 {
+        font-size: 1.3em;
+        font-weight: 600;
+        color: #534d4d;
+    }
+    h3 {
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        color: #5c5757;
+    }
+    h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: $primary-color;
+    }
+}
+.global-article {
+    margin: 2rem 0 2rem 10rem;
+    width: 1000px;
+    .heading {
+        font-size: 1.2rem;
+        margin: 1rem 2rem;
+        font-weight: 600;
+        color: $primary-color;
+    }
+}
+.tag-section {
+    background-color:#faefef;
+    padding:2rem;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 1px;
+   .tags {
+       background-color: whitesmoke;
+       box-shadow: 2px 2px 3px 3px rgb(185, 183, 183);
+       padding: 1rem;
+       border-radius: 4px;
+       margin-top: 2rem;
+       h3 {
+           margin-left: 1rem;
+           font-weight: 600;
+           color: $primary-color;
+           margin-bottom: 1rem;
+       }
+       button {
+           border: 0;
+           background-color: $primary-color;
+           border-radius: 8px;
+           color: whitesmoke;
+           margin: .75rem;
+           padding: .65rem;
+           font-weight: 600;
+       }
+   }
+}
