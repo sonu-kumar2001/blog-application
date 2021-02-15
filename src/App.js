@@ -3,6 +3,7 @@ import Home from "./components/Home"
 import Register from "./components/Register"
 import Login from "./components/Login"
 import {BrowserRouter, Route} from "react-router-dom"
+import SingleArticle from "./components/SingleArticle"
 
 
 export default class App extends Component {
@@ -19,7 +20,7 @@ export default class App extends Component {
       <Route path="/register/login">
         <Login/>
       </Route>
-      <Route/>
+      <Route path="/article/:slug" component={SingleArticle}/>
     </BrowserRouter>
     )
   }

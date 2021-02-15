@@ -15,28 +15,36 @@
 .article-card {
     box-shadow: 2px 2px 4px 4px rgb(194, 188, 188);
     margin: 2rem  1rem;
-    padding: 3rem 2rem;
     border-radius: 8px;
     width: 30%;
+    img {
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+    .article-detail {
+        padding: 1rem 2rem 4rem 2rem;   
+    }
     h2 {
         font-size: 1.3em;
         font-weight: 600;
-        color: #534d4d;
+        color: #31326f;
     }
     h3 {
-        font-size: 1.1rem;
-        margin: 1.5rem 0;
-        color: #5c5757;
+        font-size: 1rem;
+        margin: 1rem 0 1.3rem 0;
+        color: #f5b3b3;
     }
     h4 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 600;
         text-transform: capitalize;
         color: $primary-color;
+        
     }
 }
 .global-article {
-    margin: 2rem 0 2rem 10rem;
+    margin: 2rem 5rem;
     width: 1000px;
     .heading {
         font-size: 1.2rem;
@@ -75,4 +83,12 @@
            font-weight: 600;
        }
    }
+}
+.author-div {
+    align-items: center;
+    i {
+        font-size: 2rem;
+        margin-right: .25rem;
+        color:#31326f;
+    }
 }

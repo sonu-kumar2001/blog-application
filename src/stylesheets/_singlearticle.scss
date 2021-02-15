@@ -1,0 +1,33 @@
+.single-article-detail {
+    max-width: 800px;
+    margin: 60px auto;
+    img {
+        height: 400px;
+        object-fit: cover;
+    }
+    h1 {
+        font-size: 45px;
+        font-weight: 700;
+    }
+    h3 {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 600;
+        // color: $primary-color;
+        margin: 24px 0;
+    }
+    p {
+        margin: 25px 0;
+        line-height: 32px;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .author {
+        align-items: center;
+        i {
+            margin-right: 8px;
+            font-size: 28px;
+            color: $primary-color;
+        }
+    }
+}

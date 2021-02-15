@@ -31,9 +31,17 @@ export default class Home extends Component {
                             this.state.articleData.map(article => {
                                 return (
                                     <div className="article-card">
-                                        <h2>{article.title}</h2>
-                                        <h3>{article.description}</h3>
-                                        <h4>Author : {article.author.username}</h4>
+                                        <img src={article.img} alt="article-img"></img>
+                                        <div className="article-detail">
+                                            <Link to={`/article/${article.slug}`}>
+                                                <h2>{article.title}</h2>
+                                            </Link>
+                                            <h3>{article.description}</h3>
+                                            <div className="author-div flex">
+                                                <i class="far fa-user-circle"></i>
+                                                <h4>{article.author.username}</h4>
+                                            </div>
+                                        </div>
                                     </div>
                                 )
                             })
