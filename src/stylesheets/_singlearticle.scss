@@ -1,33 +1,104 @@
 .single-article-detail {
-    max-width: 800px;
-    margin: 60px auto;
-    img {
-        height: 400px;
-        object-fit: cover;
+  max-width: 800px;
+  margin: 60px auto;
+  img {
+    height: 400px;
+    object-fit: cover;
+  }
+  h1 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    // color: $primary-color;
+    margin: 24px 0;
+  }
+  .article-para {
+    margin: 25px 0;
+    line-height: 32px;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .author {
+    align-items: center;
+    i {
+      margin-right: 8px;
+      font-size: 28px;
+      color: $primary-color;
     }
-    h1 {
-        font-size: 45px;
-        font-weight: 700;
-    }
-    h3 {
-        font-size: 20px;
-        text-transform: capitalize;
-        font-weight: 600;
-        // color: $primary-color;
-        margin: 24px 0;
-    }
-    p {
-        margin: 25px 0;
-        line-height: 32px;
-        font-size: 22px;
-        font-weight: 400;
-    }
-    .author {
-        align-items: center;
-        i {
-            margin-right: 8px;
-            font-size: 28px;
-            color: $primary-color;
-        }
-    }
+  }
+}
+
+.comment-input {
+  margin: 3rem 0;
+  input {
+    width: 78%;
+    padding: 1.4rem;
+    border: 0;
+    box-shadow: 2px 2px 3px 3px rgb(199, 197, 197);
+    border-radius: 4px;
+    outline: 0;
+    background-color: #efefef;
+  }
+  button {
+    padding: 1rem 2rem;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 0;
+    color: $primary-color;
+    box-shadow: 2px 2px 3px 3px #cac8c8;
+  }
+}
+.comment-box {
+  box-shadow: 2px 2px 3px 3px rgb(199, 197, 197);
+  background-color: #faefef;
+  border-radius: 4px;
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: $primary-color;
+  }
+  p {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  button {
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+  }
+  i {
+    font-size: 18px;
+  }
+}
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+.extra-properties {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 300px;
+  right: 40px;
+  padding: 0 3rem;
+  i {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+  .visible {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
 }

@@ -1,13 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import "./stylesheets/main.scss"
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./stylesheets/main.scss";
+import "bulma";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-

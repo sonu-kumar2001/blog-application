@@ -65,7 +65,7 @@ export default class Register extends Component {
         try {         
             await fetch(`/api/users`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(user)})
                .then((res) => res.json())
-               .then((data) => localStorage.setItem('token',data.user.createdToken))
+               .then((data) => localStorage.setItem('user',JSON.stringify(data.user)))
                .then(() => this.setState({isUserSignup:!this.state.isUserSignup}))               
           } catch (error) {
               console.error('Error',error)
@@ -75,7 +75,7 @@ export default class Register extends Component {
     render() {
         const{username,email,password,confirmPassword} = this.state.errors;
 
-        if(localStorage.getItem('token') || this.state.isUserSignup){
+        if(localStorage.getItem('user') || this.state.isUserSignup){
             return   <Redirect to='/' />
         }
         return (

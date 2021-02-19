@@ -1,4 +1,6 @@
 header {
+    position: relative;
+    margin-right: 5rem;
     .logo {
         h2 {
             font-size: 1.5rem;
@@ -6,6 +8,7 @@ header {
             font-style: italic;
             margin: 1.2rem 0 1.3rem 1rem;
             color: $primary-color;
+            position: fixed;
         }
     }
     nav {
