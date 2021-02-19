@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  font-size: 0;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  font-family: $heading-font;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+}
+body {
+  font-family: $body-font;
+}
+
+// text-center
+.text-center {
+  text-align: center;
+}
+// button
+.btn {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 34px;
+}
+// padding top-bottom
+.padding {
+  padding: 3rem 0;
+}
+// active
+
